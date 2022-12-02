@@ -1,0 +1,18 @@
+{
+    "app_title" : "추억 보관소",
+    "sign_in" : "Sign in",
+
+    "valid" : {
+        "email" : "이메일 형식이 아닙니다",
+        "password" : "비밀번호를 입력해주세요"
+    },
+    "hint" : {
+        "email" : "이메일을 입력하세요",
+        "password" : "비밀번호를 입력하세요"
+    }    ,
+    
+    "login" : {        
+        "not_registered_yet" : "아직 가입을 안하셨나요?",
+        "Create_an_account" : "회원가입"
+    }
+}

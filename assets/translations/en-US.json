@@ -1,0 +1,18 @@
+{
+    "app_title" : "Memory Place",
+    "sign_in" : "Sign in",
+
+    "valid" : {
+        "email" : "Please enter a valid email",
+        "password" : "Please enter your password"
+    },
+    "hint" : {
+        "email" : "Enter your email",
+        "password" : "Enter your password"
+    }    ,
+    
+    "login" : {        
+        "not_registered_yet" : "Not registered yet?",
+        "Create_an_account" : "Create an account"
+    }
+}
