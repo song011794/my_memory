@@ -14,5 +14,16 @@
     "login" : {        
         "not_registered_yet" : "아직 가입을 안하셨나요?",
         "Create_an_account" : "회원가입"
-    }
+    },
+
+    "drawer" :{
+        "map_type" : "맵 타입"
+    },
+
+    "maptype" : {
+        "satellite" : "위성",
+        "terrain" : "지역"
+    },
+
+    "logout" : "로그아웃"
 }

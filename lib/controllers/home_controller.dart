@@ -8,6 +8,8 @@ class HomeController {
 
   final Ref ref;
 
+  List<String> drawerBuildItems = ['MapType'];
+
   CameraPosition getInitialCameraPosition =
       const CameraPosition(target: LatLng(37.5962, 127.0854), zoom: 13);
 }

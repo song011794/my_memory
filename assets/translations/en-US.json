@@ -13,6 +13,14 @@
     
     "login" : {        
         "not_registered_yet" : "Not registered yet?",
-        "Create_an_account" : "Create an account"
-    }
+        "Create_an_account" : "Create an account"        
+    },
+    "drawer" :{
+        "map_type" : "map type"
+    },
+    "maptype" : {
+        "satellite" : "satellite",
+        "terrain" : "terrain"
+    },
+    "logout" : "logout"
 }

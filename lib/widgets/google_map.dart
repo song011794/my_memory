@@ -7,17 +7,23 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:my_memory/controllers/home_controller.dart';
 
 class MapWidget extends HookConsumerWidget {
-  const MapWidget({super.key});
+  const MapWidget({super.key, required this.mapType});
+
+  final MapType mapType;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    useEffect(() {
+      print('MapWidget init!!');
+    }, []);
+
     final homeController = ref.read(homeControllerPovider);
 
     final mapController = useValueNotifier(Completer<GoogleMapController>());
 
     return GoogleMap(
       myLocationEnabled: true,
-      mapType: MapType.normal,
+      mapType: mapType,
       initialCameraPosition: homeController.getInitialCameraPosition,
       onMapCreated: (GoogleMapController controller) {
         mapController.value.complete(controller);
