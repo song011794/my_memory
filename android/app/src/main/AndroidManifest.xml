@@ -1,5 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.my_memory">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
    <application
         android:label="my_memory"
         android:name="${applicationName}"
@@ -7,7 +12,7 @@
 
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="AIzaSyA0OVbvIQIGm5DOyTGYjziN_vjV7rfLzFQ"/>
+               android:value="${MAP_API_KEY}"/>
 
         <activity
             android:name=".MainActivity"
