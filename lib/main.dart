@@ -29,14 +29,8 @@ class _MemoryAppState extends ConsumerState<MemoryApp> {
   @override
   void initState() {
     ref.read(permissionControllerPovider).checkPermission();
-
-    super.initState();
-  }
-
-  @override
-  void dispose() {
     FlutterNativeSplash.remove();
-    super.dispose();
+    super.initState();
   }
 
   @override
@@ -56,24 +50,3 @@ class _MemoryAppState extends ConsumerState<MemoryApp> {
     );
   }
 }
-
-// class MemoryApp extends ConsumerWidget {
-//   const MemoryApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context, WidgetRef ref) {
-//     final router = ref.read(routerProvider);
-
-//     return MaterialApp.router(
-//       routerConfig: router,
-//       localizationsDelegates: context.localizationDelegates,
-//       supportedLocales: context.supportedLocales,
-//       locale: context.locale,
-//       title: 'Memory Place',
-//       onGenerateTitle : (context) => tr('app_title'),
-//       theme: ThemeData(
-//         primarySwatch: Colors.blue,
-//       ),
-//     );
-//   }
-// }

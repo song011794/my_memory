@@ -25,7 +25,7 @@ class PermissionController {
     });
 
     if (!per) {
-      openAppSettings();
+      // openAppSettings();
     }
 
     return per;
