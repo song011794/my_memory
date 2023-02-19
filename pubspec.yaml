@@ -62,6 +62,12 @@ dependencies:
   geolocator: ^9.0.2
   dio: ^4.0.6
   http: ^0.13.5
+  retrofit: ^3.3.1
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.8.0
+  logger: ^1.1.0
+  flutter_secure_storage: ^8.0.0
+  flutter_dotenv: ^5.0.2
   
 
 dev_dependencies:
@@ -83,6 +89,9 @@ dev_dependencies:
   mockito: ^5.3.2
   
   build_runner: ^2.3.3
+  freezed: ^2.3.2
+  json_serializable: ^6.6.1
+  retrofit_generator: ^4.2.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -97,6 +106,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/translations/
+    - .env
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

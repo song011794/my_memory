@@ -1,11 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:my_memory/controllers/permission_controller.dart';
 import 'package:my_memory/providers/router_provider.dart';
+// ignore: depend_on_referenced_packages
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() async {
+  await dotenv.load(fileName: ".env");
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
